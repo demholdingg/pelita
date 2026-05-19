@@ -6,19 +6,19 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const partners = [
-  { name: "Maersk", logo: "/images/logos/maersk.png" },
-  { name: "CMA CGM", logo: "/images/logos/cma-cgm.png" },
-  { name: "Evergreen Line", logo: "/images/logos/evergreen.png" },
-  { name: "COSCO Shipping", logo: "/images/logos/cosco.png" },
+  { name: "Maersk", logo: "/images/logos/maersk.svg" },
+  { name: "CMA CGM", logo: "/images/logos/cgm.svg" },
+  { name: "Evergreen Line", logo: "/images/logos/evergreen.svg" },
+  { name: "COSCO Shipping", logo: "/images/logos/cosco.svg" },
   { name: "Hapag-Lloyd", logo: "/images/logos/hapag-lloyd.png" },
-  { name: "ONE (Ocean Network Express)", logo: "/images/logos/one.png" },
+  { name: "ONE (Ocean Network Express)", logo: "/images/logos/one.svg" },
   // Duplicate partners to ensure continuous scroll effect
-  { name: "Maersk", logo: "/images/logos/maersk.png" },
-  { name: "CMA CGM", logo: "/images/logos/cma-cgm.png" },
-  { name: "Evergreen Line", logo: "/images/logos/evergreen.png" },
-  { name: "COSCO Shipping", logo: "/images/logos/cosco.png" },
+  { name: "Maersk", logo: "/images/logos/maersk.svg" },
+  { name: "CMA CGM", logo: "/images/logos/cgm.svg" },
+  { name: "Evergreen Line", logo: "/images/logos/evergreen.svg" },
+  { name: "COSCO Shipping", logo: "/images/logos/cosco.svg" },
   { name: "Hapag-Lloyd", logo: "/images/logos/hapag-lloyd.png" },
-  { name: "ONE (Ocean Network Express)", logo: "/images/logos/one.png" },
+  { name: "ONE (Ocean Network Express)", logo: "/images/logos/one.svg" },
 ];
 
 export default function LogisticsPartners() {

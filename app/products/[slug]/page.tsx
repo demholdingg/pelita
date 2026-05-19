@@ -21,7 +21,8 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: "Product Not Found | Pelita Bioenergi Nusantara",
+      title: "Produk Tidak Ditemukan | Pelita Bioenergi Nusantara",
+      robots: { index: false, follow: true },
     };
   }
 

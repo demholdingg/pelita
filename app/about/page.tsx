@@ -6,9 +6,9 @@ import type { Metadata } from "next";
 import GlobalReachMap from "@/components/sections/GlobalReachMap";
 
 export const metadata: Metadata = {
-  title: "About Us | Pelita Bioenergi Nusantara",
+  title: "About Our Vision | Pelita Bioenergi Nusantara",
   description:
-    "Pelajari visi, misi, dan teknologi di balik solusi bioenergi berkelanjutan kami.",
+    "Pioneering a low-carbon future through sustainable bioenergy. Learn about our mission to substitute fossil fuels and protect global forests.",
 };
 
 export default function AboutPage() {
@@ -23,14 +23,16 @@ export default function AboutPage() {
               Our Story
             </h2>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 font-heading leading-tight">
-              Pioneering <span className="text-amber-400">Sustainable</span>{" "}
-              Energy
+              Pioneering Low-Carbon
+              <span className="text-amber-400">Sustainable</span> Future
             </h1>
             <p className="text-lg text-slate-200 leading-relaxed">
-              Pelita Bioenergi Nusantara hadir sebagai solusi inovatif dalam
-              menghadapi tantangan energi global. Kami menjembatani kebutuhan
-              industri dengan tanggung jawab lingkungan melalui pemanfaatan
-              biomassa yang berkelanjutan.
+              As a green energy company, we recognize that renewable energy
+              sources are vital for a low-carbon future. We are committed to
+              sustainable forest management as a core strategy to prevent forest
+              conversion. By substituting fossil fuels with bioenergy, we
+              protect our planet and maintain forest sustainability to combat
+              climate change for future generations.
             </p>
           </div>
         </div>
@@ -50,20 +52,24 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-slate-600">
                 <p>
-                  <strong>Visi:</strong> Menjadi pemimpin global dalam
-                  penyediaan solusi bioenergi modern yang mempercepat transisi
-                  dunia menuju masa depan rendah karbon.
+                  <strong>Vision:</strong> To be a global leader in sustainable
+                  bioenergy, ensuring the best outcomes for forests,
+                  communities, and the environment through integrity and
+                  continuous innovation in renewable energy.
                 </p>
                 <p>
-                  <strong>Misi:</strong> Menghasilkan produk biomassa
-                  berkualitas tinggi dengan standar internasional, memberdayakan
-                  komunitas lokal, dan menjaga kelestarian ekosistem.
+                  <strong>Mission:</strong> To provide a positive impact on
+                  society and nature through sustainable forest replanting and
+                  biomass innovation. We are dedicated to maintaining ecological
+                  balance and preventing climate change by providing
+                  high-quality alternatives to fossil fuels.
                 </p>
               </div>
             </div>
             <div className="bg-slate-50 p-12 rounded-3xl border border-slate-100 italic text-green-900 font-medium">
-              Kami percaya bahwa energi masa depan adalah energi yang tidak
-              hanya menggerakkan mesin, tetapi juga menjaga kehidupan.
+              We believe that bioenergy is the key to substituting fossil fuels,
+              ensuring that the energy powering the world also protects our
+              forests and climate.
             </div>
           </div>
         </div>

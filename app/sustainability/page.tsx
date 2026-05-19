@@ -1,11 +1,11 @@
 import ImpactStats from "@/components/sections/ImpactStats";
-import { Leaf, Globe, ShieldCheck } from "lucide-react";
+import { Leaf, Globe, ShieldCheck, Award } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sustainability | Pelita Bioenergi Nusantara",
+  title: "Sustainability & Compliance | Pelita Bioenergi Nusantara",
   description:
-    "Pelajari komitmen kami terhadap tanggung jawab lingkungan dan dampak kami terhadap transisi energi bersih global.",
+    "Explore our commitment to sustainable forest management and international certifications including GGL, SVLK, PEFC, and ISCC for a low-carbon future.",
 };
 
 export default function SustainabilityPage() {
@@ -23,10 +23,10 @@ export default function SustainabilityPage() {
               Sustainability at our <span className="text-amber-400">Core</span>
             </h1>
             <p className="text-lg text-slate-200 leading-relaxed">
-              Di Pelita Bioenergi Nusantara, keberlanjutan bukan sekadar tujuan;
-              itu adalah fondasi dari semua yang kami lakukan. Kami berkomitmen
-              untuk mentransformasi limbah pertanian menjadi energi bersih,
-              mengurangi jejak karbon, dan memberdayakan komunitas lokal.
+              At Pelita Bioenergi Nusantara, sustainability isn't just a
+              goal—it's our foundation. We are committed to rigorous forest
+              replanting programs in full accordance with FSC regulations to
+              ensure long-term ecological health.
             </p>
           </div>
         </div>
@@ -40,11 +40,11 @@ export default function SustainabilityPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-heading font-bold text-green-900 uppercase tracking-wider mb-4">
-              Pilar Strategis Kami
+              Our Streamlined Process
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Kami fokus pada tiga pilar utama keberlanjutan untuk memastikan
-              dampak positif jangka panjang bagi lingkungan dan masyarakat.
+              Integrating sustainable forest management with advanced bioenergy
+              production to drive a low-carbon future.
             </p>
           </div>
 
@@ -54,12 +54,12 @@ export default function SustainabilityPage() {
                 <Leaf className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-4 font-heading">
-                Circular Economy
+                Sustainable Management
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Memanfaatkan kembali produk sampingan pertanian menjadi bahan
-                bakar biomassa bernilai tinggi, menutup siklus limbah dan
-                mengoptimalkan konsumsi sumber daya.
+                Implementing rigorous forest management to prevent conversion to
+                non-forest uses, ensuring our resources are renewable and
+                ecologically sound.
               </p>
             </div>
 
@@ -68,12 +68,12 @@ export default function SustainabilityPage() {
                 <Globe className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-4 font-heading">
-                Reduksi Karbon
+                Fossil Fuel Substitution
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Bekerja aktif menuju pengurangan emisi CO2 yang signifikan dalam
-                proses industri dengan menyediakan alternatif energi terbarukan
-                yang rendah emisi.
+                Replacing fossil fuels with high-calorie bioenergy solutions to
+                significantly reduce carbon footprints in industrial
+                applications worldwide.
               </p>
             </div>
 
@@ -82,12 +82,71 @@ export default function SustainabilityPage() {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-4 font-heading">
-                Sourcing Etis
+                Future Stewardship
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Menjamin transparansi penuh dan menjaga kemitraan etis dengan
-                petani lokal untuk mendukung pertumbuhan ekonomi regional dan
-                keanekaragaman hayati.
+                Dedicated replanting programs and forest sustainability to
+                combat climate change and protect our planet for future
+                generations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="py-24 bg-slate-50 border-t border-slate-100">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-heading font-bold text-green-900 uppercase tracking-wider mb-4">
+              Certifications & Compliance
+            </h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              “With globally recognized certifications, we stand for excellence,
+              reliability, and a strong commitment to sustainable energy
+              solutions.”
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+              <Award className="w-10 h-10 text-amber-500 mb-6" />
+              <h3 className="font-bold text-slate-800 mb-3 font-heading">
+                Green Gold Label
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                A leading international certification for sustainable biomass,
+                tracking products from source to end-user.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+              <ShieldCheck className="w-10 h-10 text-green-700 mb-6" />
+              <h3 className="font-bold text-slate-800 mb-3 font-heading">
+                SVLK (Indonesian Legal Wood)
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                Ensures 100% legality and sustainability of timber products in
+                compliance with Indonesian regulations.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+              <Leaf className="w-10 h-10 text-green-600 mb-6" />
+              <h3 className="font-bold text-slate-800 mb-3 font-heading">
+                PEFC Certification
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                International standard promoting sustainable forest management
+                through independent third-party certification.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+              <Globe className="w-10 h-10 text-blue-600 mb-6" />
+              <h3 className="font-bold text-slate-800 mb-3 font-heading">
+                ISCC Standard
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                Global system for sustainability and greenhouse gas savings for
+                biomass and bioenergy products.
               </p>
             </div>
           </div>

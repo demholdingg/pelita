@@ -65,12 +65,12 @@ const locations = [
 ];
 
 const infoContainers = [
-  { region: "Jawa", status: "Pusat Operasional & Distribusi", type: "hub" },
-  { region: "Sumatera", status: "Sentra Bahan Baku Biomassa", type: "node" },
-  { region: "Kalimantan", status: "Kawasan Produksi Utama", type: "node" },
-  { region: "Sulawesi", status: "Jalur Logistik Maritim", type: "node" },
-  { region: "Indonesia Timur", status: "Ekspansi Strategis", type: "node" },
-  { region: "Nasional", status: "Jaringan Distribusi Aktif", type: "node" },
+  { region: "Jawa", status: "Operations & Distribution Center", type: "hub" },
+  { region: "Sumatera", status: "Biomass Raw Material Center", type: "node" },
+  { region: "Kalimantan", status: "Main Production Area", type: "node" },
+  { region: "Sulawesi", status: "Maritime Logistics Route", type: "node" },
+  { region: "Indonesia Timur", status: "Strategic Expansion", type: "node" },
+  { region: "Nasional", status: "Active Distribution Network", type: "node" },
 ];
 
 const ringsData = [
@@ -237,9 +237,9 @@ export default function GlobalReachMap() {
           </h2>
 
           <p className="global-reach-text leading-relaxed text-slate-600">
-            Pelita Bioenergi Nusantara berkomitmen untuk memperkuat ketahanan
-            energi terbarukan di seluruh penjuru tanah air, menghubungkan sumber
-            daya biomass lokal dengan standar kualitas internasional.
+            Elite Bioenergy Nusantara is committed to strengthening renewable
+            energy security throughout the country, connecting local biomass
+            resources with international quality standards.
           </p>
         </div>
 
