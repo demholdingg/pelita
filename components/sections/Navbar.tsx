@@ -12,6 +12,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
     { name: "Products", href: "/products" },
     { name: "Sustainability", href: "/sustainability" },
     { name: "Contact", href: "/contact" },
@@ -21,7 +22,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    
+
     // Set initial value
     handleScroll();
 
@@ -32,7 +33,9 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 px-6 transition-all duration-300 text-white ${
-        isScrolled ? "bg-green-900/95 backdrop-blur-md py-4 shadow-xl" : "bg-transparent py-6"
+        isScrolled
+          ? "bg-green-900/95 backdrop-blur-md py-4 shadow-xl"
+          : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
