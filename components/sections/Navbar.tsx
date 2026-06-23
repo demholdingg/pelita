@@ -1,16 +1,13 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
-  const navRef = useRef<HTMLElement>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -20,30 +17,23 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
   ];
 
-  useGSAP(
-    () => {
-      gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    
+    // Set initial value
+    handleScroll();
 
-      // Animasi perubahan background saat scroll
-      gsap.to(navRef.current, {
-        backgroundColor: "#064e3b", // Forest Green (green-900)
-        backdropFilter: "blur(12px)",
-        paddingTop: "1rem",
-        paddingBottom: "1rem",
-        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
-        scrollTrigger: {
-          start: "top -20", // Memicu animasi setelah scroll 20px
-          toggleActions: "play none none reverse", // Kembali transparan saat di posisi paling atas
-        },
-      });
-    },
-    { scope: navRef, dependencies: [] },
-  );
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav
-      ref={navRef}
-      className="fixed top-0 left-0 right-0 z-50 px-6 py-6 transition-all duration-300 text-white bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 px-6 transition-all duration-300 text-white ${
+        isScrolled ? "bg-green-900/95 backdrop-blur-md py-4 shadow-xl" : "bg-transparent py-6"
+      }`}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group relative z-50">
@@ -55,7 +45,7 @@ export default function Navbar() {
             className="group-hover:rotate-12 transition-transform object-contain"
           />
           <span className="font-heading font-bold text-xl tracking-tight uppercase">
-            Pelita <span className="text-amber-400">Bioenergi</span>
+            Pelita <span className="text-amber-400">Bioenergi Nusantara</span>
           </span>
         </Link>
 

@@ -139,7 +139,7 @@ export default function Hero() {
             Sustainable Green <span className="text-amber-400">Bioenergy</span>
           </h1>
           <p className="hero-content text-lg md:text-xl text-slate-200 mb-10 leading-relaxed">
-            Leading the transition to renewable energy through sustainable
+            Part Of PT Duta Energi Muliatama / DEM Holding Leading the transition to renewable energy through sustainable
             forest management. We provide premium biomass solutions to
             substitute fossil fuels and drive a low-carbon growth.
           </p>

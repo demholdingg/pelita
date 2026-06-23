@@ -2,10 +2,22 @@ import ImpactStats from "@/components/sections/ImpactStats";
 import { Leaf, Globe, ShieldCheck, Award } from "lucide-react";
 import type { Metadata } from "next";
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://pelitaenergi.com";
+
 export const metadata: Metadata = {
-  title: "Sustainability & Compliance | Pelita Bioenergi Nusantara",
+  title: "Keberlanjutan & Sertifikasi",
   description:
-    "Explore our commitment to sustainable forest management and international certifications including GGL, SVLK, PEFC, and ISCC for a low-carbon future.",
+    "Komitmen Pelita Bioenergi Nusantara (bagian dari Duta Energi Muliatama) terhadap manajemen hutan berkelanjutan dan sertifikasi internasional GGL, SVLK, PEFC, dan ISCC.",
+  alternates: {
+    canonical: `${BASE_URL}/sustainability`,
+  },
+  openGraph: {
+    title: "Keberlanjutan & Sertifikasi | Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama",
+    description:
+      "Komitmen kami terhadap manajemen hutan berkelanjutan dan sertifikasi internasional GGL, SVLK, PEFC, dan ISCC untuk masa depan rendah karbon.",
+    url: `${BASE_URL}/sustainability`,
+    type: "website",
+  },
 };
 
 export default function SustainabilityPage() {

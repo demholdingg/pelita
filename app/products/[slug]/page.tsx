@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { CheckCircle2 } from "lucide-react";
 import { products } from "@/lib/products"; // Corrected import path
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://pelitaenergi.com";
+
 // Generate static paths for all products at build time
 export async function generateStaticParams() {
   return products.map((product) => ({
@@ -21,15 +23,22 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: "Produk Tidak Ditemukan | Pelita Bioenergi Nusantara",
+      title: "Produk Tidak Ditemukan",
       robots: { index: false, follow: true },
     };
   }
 
   return {
-    title: `${product.name} | Pelita Bioenergi Nusantara`,
+    title: product.name,
     description: product.description,
+    alternates: {
+      canonical: `${BASE_URL}/products/${product.slug}`,
+    },
     openGraph: {
+      title: `${product.name} | Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama`,
+      description: product.description,
+      url: `${BASE_URL}/products/${product.slug}`,
+      type: "website",
       images: [
         {
           url: product.image,

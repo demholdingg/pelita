@@ -102,31 +102,6 @@ export default function AboutPreview() {
               future.
             </p>
           </div>
-
-          {/* Stats Grid */}
-          <div className="lg:w-1/2 w-full stats-container">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {stats.map((stat, index) => (
-                <div
-                  key={index}
-                  className="stat-card bg-white p-8 rounded-xl shadow-sm border border-slate-100 flex flex-col items-center text-center"
-                >
-                  <div className="mb-4 p-3 bg-amber-50 rounded-full">
-                    {stat.icon}
-                  </div>
-                  <span className="text-3xl font-bold text-green-900">
-                    {stat.value}
-                  </span>
-                  <span className="text-sm font-semibold text-slate-500 uppercase tracking-tight">
-                    {stat.label}
-                  </span>
-                  <span className="text-xs text-slate-400 mt-1">
-                    {stat.unit}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
