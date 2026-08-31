@@ -5,16 +5,16 @@ import Button from "@/components/ui/Button";
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://pelitaenergi.com";
 
 export const metadata: Metadata = {
-  title: "Hubungi Kami",
+  title: "Contact Us",
   description:
-    "Hubungi Pelita Bioenergi Nusantara (bagian dari Duta Energi Muliatama) untuk solusi biomassa premium dan kemitraan energi berkelanjutan. Siap mendukung masa depan rendah karbon Anda.",
+    "Contact Pelita Bioenergi Nusantara (part of Duta Energi Muliatama) for premium biomass solutions and sustainable energy partnerships. Ready to support your low-carbon future.",
   alternates: {
     canonical: `${BASE_URL}/contact`,
   },
   openGraph: {
-    title: "Hubungi Kami | Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama",
+    title: "Contact Us | Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama",
     description:
-      "Hubungi tim kami untuk solusi biomassa premium dan kemitraan energi berkelanjutan.",
+      "Contact our team for premium biomass solutions and sustainable energy partnerships.",
     url: `${BASE_URL}/contact`,
     type: "website",
   },

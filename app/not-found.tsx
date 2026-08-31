@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Home } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "404 - Halaman Tidak Ditemukan | Pelita Bioenergi Nusantara",
+  title: "404 - Page Not Found | Pelita Bioenergi Nusantara",
   description:
-    "Maaf, halaman yang Anda cari tidak tersedia. Pastikan URL yang dimasukkan sudah benar atau halaman telah dipindahkan.",
+    "Sorry, the page you are looking for is not available. Please check the URL or the page may have been moved.",
   robots: { index: false, follow: true },
 };
 
@@ -18,18 +18,18 @@ export default function NotFound() {
         </h1>
         <div className="relative -mt-20">
           <h2 className="text-3xl font-heading font-bold text-slate-800 mb-4">
-            Halaman Tidak Ditemukan
+            Page Not Found
           </h2>
           <p className="text-slate-600 mb-8 max-w-md mx-auto">
-            Maaf, sepertinya halaman yang Anda cari tidak tersedia. Pastikan URL
-            yang dimasukkan sudah benar atau halaman telah dipindahkan.
+            Sorry, the page you are looking for does not seem to be available.
+            Please check the URL or the page may have been moved.
           </p>
           <Link
             href="/"
             className="inline-flex items-center gap-2 bg-green-900 text-amber-400 px-8 py-4 rounded-xl font-bold uppercase tracking-widest hover:bg-green-800 transition-all shadow-lg hover:shadow-xl active:scale-95"
           >
             <Home className="w-5 h-5" />
-            Kembali ke Beranda
+            Return to Home
           </Link>
         </div>
       </div>

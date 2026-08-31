@@ -4,16 +4,16 @@ import { Leaf, Sparkles, Wind } from "lucide-react";
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://pelitaenergi.com";
 
 export const metadata = {
-  title: "Katalog Produk Biomassa",
+  title: "Biomass Product Catalog",
   description:
-    "Jelajahi katalog produk biomassa premium kami: Wood Pellets, Wood Chips, Sawdust, dan Palm Kernel Shell untuk kebutuhan industri. Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama.",
+    "Explore our premium biomass product catalog: Wood Pellets, Wood Chips, Sawdust, and Palm Kernel Shell for industrial needs. Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama.",
   alternates: {
     canonical: `${BASE_URL}/products`,
   },
   openGraph: {
-    title: "Katalog Produk Biomassa | Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama",
+    title: "Biomass Product Catalog | Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama",
     description:
-      "Jelajahi produk biomassa premium: Wood Pellets, Wood Chips, Palm Kernel Shell & Sawdust untuk kebutuhan industri global.",
+      "Explore premium biomass products: Wood Pellets, Wood Chips, Palm Kernel Shell & Sawdust for global industrial needs.",
     url: `${BASE_URL}/products`,
     type: "website",
   },
@@ -25,7 +25,7 @@ export default function ProductsPage() {
       {/* Hero Section with Image */}
       <section className="bg-green-900 text-white pt-32 pb-24 relative overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-[url('/images/services/pelletformations.jpg')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-[url('/images/services/pelletformations.jpg')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-green-900 via-green-900/80 to-transparent" />
         <div className="absolute inset-0 opacity-10 bg-[url('/images/pattern.svg')] bg-repeat" />
 
@@ -46,9 +46,9 @@ export default function ProductsPage() {
               Sustainable <span className="text-amber-400">Energy Catalog</span>
             </h1>
             <p className="text-slate-200 text-lg leading-relaxed">
-              Discover our range of high-efficiency biomass products designed to
-              meet the rigorous demands of global industrial sectors while
-              maintaining environmental integrity.
+              We produce wood pellets, wood chips, Sawdust, PKS Screening,
+Non Screening, and also PKS Charcoal which are our superior
+products as a substitute for fossil energy.
             </p>
           </div>
         </div>

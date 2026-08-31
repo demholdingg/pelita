@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
+import WhatsAppButton from "@/components/sections/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,7 +13,7 @@ const inter = Inter({
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta-sans",
-  weight: ["400", "500", "600", "700", "800"], // Memilih beberapa bobot yang umum digunakan untuk heading
+  weight: ["400", "500", "600", "700", "800"], // Select common font weights used for headings
 });
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://pelitaenergi.com";
@@ -20,26 +21,27 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://pelitaenergi.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama | Solusi Bioenergi Berkelanjutan",
+    default:
+      "Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama | Sustainable Bioenergy Solutions",
     template: "%s | Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama",
   },
   description:
-    "Pelita Bioenergi Nusantara, bagian dari Duta Energi Muliatama, adalah penyedia terkemuka produk biomassa dan bioenergi premium untuk kebutuhan industri. Wood Pellets, Wood Chips, Sawdust, Palm Kernel Shell.",
+    "Pelita Bioenergi Nusantara, part of Duta Energi Muliatama, is a leading provider of premium biomass and bioenergy products for industrial needs. Wood Pellets, Wood Chips, Sawdust, Palm Kernel Shell.",
   keywords: [
     "Pelita Bioenergi Nusantara",
     "Duta Energi Muliatama",
-    "bioenergi Indonesia",
-    "biomassa Indonesia",
+    "bioenergy Indonesia",
+    "biomass Indonesia",
     "wood pellets Indonesia",
     "wood chips",
     "palm kernel shell",
     "sawdust biomass",
-    "energi terbarukan",
+    "renewable energy",
     "bioenergy supplier",
     "B2B energy Indonesia",
     "sustainable energy",
-    "pellet kayu",
-    "biomassa industri",
+    "wood pellets",
+    "industrial biomass",
     "green energy Indonesia",
   ],
   authors: [{ name: "Pelita Bioenergi Nusantara", url: BASE_URL }],
@@ -58,13 +60,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "id_ID",
-    alternateLocale: "en_US",
+    locale: "en_US",
     url: BASE_URL,
     siteName: "Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama",
     title: "Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama",
     description:
-      "Penyedia biomassa dan bioenergi premium untuk industri. Wood Pellets, Wood Chips, Palm Kernel Shell & lebih banyak lagi. Bagian dari Duta Energi Muliatama.",
+      "Premium biomass and bioenergy provider for industry. Wood Pellets, Wood Chips, Palm Kernel Shell & more. Part of Duta Energi Muliatama.",
     images: [
       {
         url: "/images/logo.png",
@@ -78,14 +79,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pelita Bioenergi Nusantara – Part of Duta Energi Muliatama",
     description:
-      "Penyedia biomassa dan bioenergi premium untuk industri. Bagian dari Duta Energi Muliatama.",
+      "Premium biomass and bioenergy provider for industry. Part of Duta Energi Muliatama.",
     images: ["/images/logo.png"],
   },
   alternates: {
     canonical: BASE_URL,
   },
   verification: {
-    // Tambahkan kode verifikasi Google/Bing setelah mendapat akses Search Console
+    // Add Google/Bing verification codes after obtaining Search Console access
     // google: "GOOGLE_SITE_VERIFICATION_CODE",
     // other: { "msvalidate.01": "BING_SITE_VERIFICATION_CODE" },
   },
@@ -105,6 +106,7 @@ export default function RootLayout({
         <Navbar />
         <div className="flex-grow">{children}</div>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

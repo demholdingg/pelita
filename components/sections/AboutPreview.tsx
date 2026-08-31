@@ -37,7 +37,7 @@ export default function AboutPreview() {
 
       if (!containerRef.current) return;
 
-      // Animasi heading dan paragraf
+      // Animate heading and paragraphs
       gsap.fromTo(
         ".about-text",
         { y: 30, opacity: 0 },
@@ -55,7 +55,7 @@ export default function AboutPreview() {
         },
       );
 
-      // Animasi kartu statistik
+      // Animate stat cards
       const statCards = gsap.utils.toArray(".stat-card");
       const statsContainer =
         containerRef.current.querySelector(".stats-container");
@@ -101,6 +101,19 @@ export default function AboutPreview() {
               businesses to transition towards a greener, more sustainable
               future.
             </p>
+          </div>
+
+          <div className="about-video w-full lg:w-1/2">
+            <div className="relative aspect-video overflow-hidden rounded-3xl bg-green-950 shadow-2xl ring-1 ring-green-900/10">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/_gmyLU5jCNc?start=49&rel=0"
+                title="Pelita Bioenergi Nusantara video profile"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
       </div>

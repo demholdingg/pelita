@@ -20,7 +20,7 @@ export default function TechnologyDiagram() {
         },
       });
 
-      // Animasi alur garis SVG (flow effect)
+      // Animate SVG flow path lines (flow effect)
       tl.fromTo(
         ".flow-path",
         { strokeDashoffset: 100, strokeDasharray: 100 },
@@ -32,7 +32,7 @@ export default function TechnologyDiagram() {
         },
       );
 
-      // Animasi icon nodes
+      // Animate icon nodes
       tl.from(
         ".tech-node",
         {
@@ -45,7 +45,7 @@ export default function TechnologyDiagram() {
         "-=1",
       );
 
-      // Efek pulsing terus-menerus pada Zap icon
+      // Continuous pulsing effect on the Zap icon
       gsap.to(".zap-pulse", {
         scale: 1.2,
         opacity: 1,

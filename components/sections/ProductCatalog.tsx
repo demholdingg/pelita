@@ -21,7 +21,7 @@ export default function ProductCatalog() {
 
   useGSAP(
     () => {
-      // Animasi kartu saat filter berubah
+      // Animate cards when filter changes
       gsap.fromTo(
         ".product-card",
         { opacity: 0, y: 20, scale: 0.95 },
